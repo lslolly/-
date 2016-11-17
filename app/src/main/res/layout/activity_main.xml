@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/item_divider"
+    android:showDividers="middle|beginning|end"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.mymaterialdesigndemo.MainActivity">
+
+    <com.example.administrator.mymaterialdesigndemo.FoldLayout
+       android:id="@+id/foldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/layout_menu_msg"
+       />
+    <com.example.administrator.mymaterialdesigndemo.FoldLayout
+        android:id="@+id/foldLayout1"
+        android:layout_width="match_parent"
+        app:layoutId="@layout/layout_menu_data"
+        android:layout_height="wrap_content"></com.example.administrator.mymaterialdesigndemo.FoldLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <com.example.administrator.mymaterialdesigndemo.FoldLayout
+        android:id="@+id/foldLayout2"
+        android:layout_width="match_parent"
+        app:layoutId="@layout/layout_item_plan"
+        android:layout_height="wrap_content"></com.example.administrator.mymaterialdesigndemo.FoldLayout>
+</LinearLayout>
